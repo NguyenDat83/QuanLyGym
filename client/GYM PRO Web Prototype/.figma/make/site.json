@@ -1,0 +1,10 @@
+{
+  "description": "Manage gym memberships and personal training schedules with an intuitive platform for members and admins to track progress and book sessions easily.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

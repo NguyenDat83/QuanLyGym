@@ -1,0 +1,5 @@
+import { Button, Icon } from "../../components/ui";
+
+export function Filters({ search, setSearch }: { search:string; setSearch:(value:string)=>void }) {
+  return <div className="flex gap-3"><div className="flex flex-1 items-center gap-2 rounded-xl border border-slate-200 bg-white px-4"><Icon name="search" size={17}/><input value={search} onChange={e=>setSearch(e.target.value)} className="w-full py-3 text-sm outline-none" placeholder="Tìm mã check-in, mã hoặc tên hội viên..."/></div><select className="rounded-xl border border-slate-200 bg-white px-4 text-xs"><option>10/10/2026</option><option>7 ngày qua</option><option>Tháng 10/2026</option></select><select className="rounded-xl border border-slate-200 bg-white px-4 text-xs"><option>Tất cả phương thức</option><option>QR</option><option>Thủ công</option></select><select className="rounded-xl border border-slate-200 bg-white px-4 text-xs"><option>Tất cả trạng thái</option><option>Thành công</option><option>Từ chối</option></select><Button secondary className="px-4"><Icon name="refresh" size={17}/></Button></div>;
+}
